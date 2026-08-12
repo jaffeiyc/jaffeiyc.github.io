@@ -1,0 +1,27 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="container">
+            <label for="x">Number: </label>
+            <input type="number" name="x" id="num" /> <br />
+            <input type="button" value="Add 7!" id="button" /> <br />
+
+            Result: <span id="result"></span>
+        </div>
+
+
+        <script type="text/javascript">
+            var number = document.getElementById("num").value;
+
+            var button = document.getElementById("button");
+
+            button.addEventListener("click", function(){
+                var res = Number(number) + 7;
+                document.getElementById("result").innerHTML = res;
+                console.log(res);
+            })
+
+        </script>
+    </body>
+</html>
